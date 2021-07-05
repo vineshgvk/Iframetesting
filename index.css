@@ -1,0 +1,181 @@
+
+/* css for login page*/
+.maincontainerbox{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: url(/IMAGES/solar.jpeg);
+    background-size: cover;
+}
+.box{
+  width:300px;
+  padding:30px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background:rgba(0,0,0,0.4);
+  text-align:center;
+
+}
+.box h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.box input[type="text"],.box input[type="password"]
+{
+border: 0;
+background: none;
+display: block;
+margin: 20px auto;
+text-align: center;
+border:3px solid #0367fd;
+padding:14px 10px;
+width:220px;
+outline: none;
+color: white;
+border-radius: 24px;
+transition:0.25px;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+
+width:270px;
+border-color: #ffc400ec;
+
+}
+.box input[type="submit"]{
+
+
+    border: 0;
+background: none;
+display: block;
+margin: 20px auto;
+text-align: center;
+border:3px solid #ffc400ec;
+padding:14px 35px;
+outline: none;
+color: white;
+border-radius: 24px;
+transition:0.25px;
+cursor:pointer;
+    
+}
+.box input[type="submit"]:hover{
+    background: #ffc400ec;
+}
+/*
+
+pagebreak*/
+
+/*CONTENT PAGE*/
+.radio-form{
+    text-align: justify;
+    margin-left: 40%;
+    margin-top: 40px;
+}
+.parah{
+    margin-top: 100px;
+    width: 60%;
+    font-size: 17px;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: snow;
+    margin-bottom: 10px;
+	}
+.maincontainer {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #90EE90;
+  background-image: url(/IMAGES/web-page-background-blue-square-vector-4661610.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+h1{
+  margin-top: 260px;
+  text-shadow: 25px;
+  line-height: 3.5rem;
+  
+}
+.card{
+    text-align: center;
+    
+    
+}
+#pricing{
+    
+    padding: 7% 15%;
+    
+}
+/* CSS FOR CONTACT PAGE*/
+.body-box{
+/*	background-color:#efefef ;*/
+	font-family: sans-serif;
+}
+.contact-box{
+	width: 500px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 #999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.form-box{
+	margin: 35px;
+	
+}
+.input-field{
+	width: 400px;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 10px;
+	border: 1px solid #777;
+	outline: none;
+
+
+}
+.textarea-field{
+	height: 150px;
+	padding-top: 10px;
+
+
+}
+.btn-sendmail{
+	border-radius: 20px;
+	color: #fff;
+	margin-top: 18px;
+	padding: 10px;
+	background-color: #47c35a;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
