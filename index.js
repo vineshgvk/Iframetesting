@@ -29,7 +29,7 @@ var password=document.getElementById("password").value;
                             "id": id, // Required for logged in app users
                             "email": username,
                             "customAttributes" : {
-                                                "DOB": 909482936000
+                                                "DOB": 909426600000
                                               }
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
