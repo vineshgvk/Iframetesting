@@ -90,7 +90,7 @@ var password=document.getElementById("password").value;
 
             alert("Logged in user id :" + b);
             //window.open("/HTML/home.html");
-            //window.location = "/Users/vgande/Documents/Project_Px/HTML/home.html";
+            window.location = "https://vineshgvk.github.io/Basic_Website/home.html";
       
             return false;
 
