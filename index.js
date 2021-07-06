@@ -27,7 +27,10 @@ var password=document.getElementById("password").value;
                     aptrinsic('identify', {
                             //User Fields
                             "id": id, // Required for logged in app users
-                            "email": username
+                            "email": username,
+                            "customAttributes" : {
+                                                "DOB": "27-10-1998"
+                                              }
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
                         },
