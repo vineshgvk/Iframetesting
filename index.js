@@ -21,7 +21,7 @@ var password=document.getElementById("password").value;
         if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com")&& password=="user" )
         {
             alert("valid user");
-            b = a.substr(6, 5);
+            b = username.substr(6, 5);
             var id = b;
             if (username=="vinesh.gandhe@gmail.com") {
                     aptrinsic('identify', {
