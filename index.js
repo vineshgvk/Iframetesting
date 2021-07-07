@@ -28,6 +28,7 @@ var password=document.getElementById("password").value;
                             //User Fields
                             "id": id, // Required for logged in app users
                             "email": username,
+                            "gender": "male",
                             "customAttributes" : {
                                                 "DOB": 909426600000
                                               }
