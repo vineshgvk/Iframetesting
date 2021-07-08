@@ -107,6 +107,12 @@ var password=document.getElementById("password").value;
 
 }
 
+function deleteAllCookies() {
+    window.aptrinsic('reset');
+    counter = 0;
+}
+
+
 const a=document.querySelector(".beginbtn");
 a.addEventListener('click',onclicked);
 function onclicked(e){
