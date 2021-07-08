@@ -30,7 +30,7 @@ var password=document.getElementById("password").value;
                             "email": username,
                             "gender": "male",
                             "customAttributes" : {
-                                                "DOB": 909426600000,
+                                                
                                                 "Useractive" :"yes"
                                               }
 
