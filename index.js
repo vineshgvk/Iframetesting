@@ -114,17 +114,99 @@ function deleteAllCookies() {
 }
 
 
-const a=document.querySelector(".beginbtn");
-a.addEventListener('click',onclicked);
-function onclicked(e){
-    console.log(e.eventtype);
+// const a=document.querySelector(".beginbtn");
+// a.addEventListener('click',onclicked);
+// function onclicked(e){
+//     console.log(e.eventtype);
+// }
+
+// const contbtn= document.querySelector(".btn-sendmail");
+// contbtn.addEventListener("click",runevent);
+// function runevent(e){
+//     console.log(e);
+    
+// }
+
+
+// script for payment page
+
+
+var Productname = "mobile";
+var Productbrand = "apple";
+var Productprice = 78000;
+var transactionStatus = "Success";
+
+
+let purchaseinitiated = new CustomEvent('purchaseinitiated', {
+    detail: {
+        itemName: this.Productname,
+        itemBrand: this.Productbrand
+    }
+})
+let transactionsuccess = new CustomEvent('transactionsuccess', {
+    detail: {
+        Amountdeducted: this.Productprice,
+        Paymentstatus: this.transactionStatus
+    }
+})
+document.addEventListener('DOMContentLoaded', function () {
+    let m = document.getElementById('paymentbtn');
+    addButton(m);
+    m.addEventListener('click', function (ev) {
+
+        addPaymentStatus(m);
+    });
+
+});
+
+function addButton(parent) {
+    let b = document.createElement('button');
+    b.setAttribute("id", "Buynow");
+    b.setAttribute("class", "btn btn-primary");
+    b.textContent = "Pay Now";
+    parent.appendChild(b);
+    return b;
 }
 
-const contbtn= document.querySelector(".btn-sendmail");
-contbtn.addEventListener("click",runevent);
-function runevent(e){
-    console.log(e);
-    
+function addPaymentStatus(parent) {
+    let p = document.createElement('p');
+    p.textContent = "Donot Refresh..." + "  Transaction is in Progress...";
+    p.setAttribute("id", "tStatus");
+    parent.appendChild(p);
+    p.addEventListener('purchaseinitiated', purchasedone);
+    p.dispatchEvent(purchaseinitiated);
+    setTimeout(printreciept, 3000);
+
+
 }
+function purchasedone(ev) {
+
+    console.log(ev.type, ev.detail);
+    // Write your PX code here to track the custom events 
+    aptrinsic('track', 'purchaseinitiated', {
+        itemName: ev.detail.itemName,
+        itemBrand: ev.detail.itemBrand
+    });
+}
+
+function printreciept() {
+    var p1 = document.getElementById("tStatus");
+    document.addEventListener('transactionsuccess', transactiondone);
+    document.dispatchEvent(transactionsuccess);
+    p1.textContent = "Transaction Success";
+
+}
+
+
+function transactiondone(ev1) {
+
+    console.log(ev1.type, ev1.detail);
+    // Write your PX code here to track the custom events
+    aptrinsic('track', 'transactionsuccess', {
+        Amountdeducted: ev1.detail.Amountdeducted,
+        Paymentstatus: ev1.detail.Paymentstatus
+    });
+}
+
 
 
