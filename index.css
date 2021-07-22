@@ -88,9 +88,10 @@ pagebreak*/
 	margin-left: 20%;
 	}
 .maincontainer {
-  margin: 0;
+  margin-top: 35px;
+
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #90EE90;
+  /* background-color: #90EE90; */
   background-image: url(web-page-background-blue-square-vector-4661610.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;  
