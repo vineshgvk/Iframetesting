@@ -27,6 +27,28 @@
 		<button class="clickme-cls">Click me1</button>
   		<button class="clickme-cls">Click me2</button>
 	</div>
+	<div>
+		h1>please select the project</h1>
+
+			<select id="projectid">
+				<option value="">--please choose a project--</option>
+				<option label="Project-1">project1</option>
+				<option label="Project-2">project2</option>
+			</select>
+			</center>
+			<script type="text/javascript">
+				document.getElementByid('projectid').addEventListener('change',function(ev){
+					if(this.selectIndex==1){
+						document.getElementByid("projectName").innerHTML="project-1  ";
+						aptrinsic("track","projectchange",{"projname":"project-1","selected":true});
+					}
+					else{
+						document.getElementByid("projectName").innerHTML="project-2  ";
+						aptrinsic("track","projectchange",{"projname":"project-2","selected":true});
+					}
+				}
+			</script>
+	</div>
 
 </center>
 
