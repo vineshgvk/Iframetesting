@@ -37,13 +37,13 @@
 			</select>
 			
 			<script type="text/javascript">
-				document.getElementByid('projectid').addEventListener('change',function(ev){
+				document.getElementById('projectid').addEventListener('change',function(ev){
 					if(this.selectIndex==1){
-						document.getElementByid("projectName").innerHTML="project-1  ";
+						document.getElementById("projectName").innerHTML="project-1  ";
 						aptrinsic("track","projectchange",{"projname":"project-1","selected":true});
 					}
 					else{
-						document.getElementByid("projectName").innerHTML="project-2  ";
+						document.getElementById("projectName").innerHTML="project-2  ";
 						aptrinsic("track","projectchange",{"projname":"project-2","selected":true});
 					}
 				});
