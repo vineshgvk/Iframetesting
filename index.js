@@ -29,6 +29,7 @@ var password=document.getElementById("password").value;
                             "id": id, // Required for logged in app users
                             "email": username,
                             "gender": "male",
+                            "useractive" :"yes",
                             
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
@@ -40,11 +41,7 @@ var password=document.getElementById("password").value;
                             "name": myaccount.a4,
                             // flat custom attributes
                         },
-                        // "customAttributes" :
-                         {
-                                                
-                            "useractive" :"yes",
-                          }
+                        
                         );
                 } else if (username=="gvk7663@gmail.com") {
                     aptrinsic('identify', {
