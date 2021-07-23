@@ -29,10 +29,7 @@ var password=document.getElementById("password").value;
                             "id": id, // Required for logged in app users
                             "email": username,
                             "gender": "male",
-                            "customAttributes" : {
-                                                
-                                                "Useractive" :"yes"
-                                              }
+                            
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
                         },
@@ -42,7 +39,13 @@ var password=document.getElementById("password").value;
                             "id": myaccount.a4, //Required
                             "name": myaccount.a4,
                             // flat custom attributes
-                        });
+                        },
+                        // "customAttributes" :
+                         {
+                                                
+                            "Useractive" :"yes",
+                          }
+                        );
                 } else if (username=="gvk7663@gmail.com") {
                     aptrinsic('identify', {
                             //User Fields
