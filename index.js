@@ -43,7 +43,7 @@ var password=document.getElementById("password").value;
                         // "customAttributes" :
                          {
                                                 
-                            "Useractive" :"yes",
+                            "useractive" :"yes",
                           }
                         );
                 } else if (username=="gvk7663@gmail.com") {
