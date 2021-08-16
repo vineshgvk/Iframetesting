@@ -54,7 +54,7 @@ var password=document.getElementById("password").value;
 
                         {
                             //Account Fields
-                            "id": myaccount.a3, //Required
+                            "id": 0,//myaccount.a3, //Required
                             "name": myaccount.a3,
                             // flat custom attributes
                         });
