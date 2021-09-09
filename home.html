@@ -30,7 +30,19 @@
 		<button class="clickme-cls">Click me1</button>
   		<button class="clickme-cls">Click me2</button>
 	</div>
-	
+	<script>
+		customElements.define('show-hello', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({mode: 'open'});
+    shadow.innerHTML = `<p>
+      Hello, ${this.getAttribute('name')}
+    </p>
+    <button  type="button" class="shadowButton"  >Shadowed BUtton </button>
+`;
+  }
+});
+		</script>
+		
 	
 		<h3>please select the project</h3>
 
@@ -53,16 +65,7 @@
 				});
 				
 				
-				customElements.define('show-hello', class extends HTMLElement {
-  connectedCallback() {
-    const shadow = this.attachShadow({mode: 'open'});
-    shadow.innerHTML = `<p>
-      Hello, ${this.getAttribute('name')}
-    </p>
-    <button  type="button" class="shadowButton"  >Shadowed BUtton </button>
-`;
-  }
-});
+				
 				
 			</script>
 	</div>
