@@ -51,6 +51,19 @@
 						aptrinsic("track","projectchange",{"projname":"project-2","selected":true});
 					}
 				});
+				
+				
+				customElements.define('show-hello', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({mode: 'open'});
+    shadow.innerHTML = `<p>
+      Hello, ${this.getAttribute('name')}
+    </p>
+    <button  type="button" class="shadowButton"  >Shadowed BUtton </button>
+`;
+  }
+});
+				
 			</script>
 	</div>
 
