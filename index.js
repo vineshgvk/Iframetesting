@@ -13,7 +13,7 @@ var password=document.getElementById("password").value;
         a1: "PX_Company-1",
         a2: "PX_Company-2",
         a3: "PX_Company-3",
-        a4: "PX_Company-stage"
+        a4: "PX_Company-4"
 
     }
     
