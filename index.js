@@ -16,21 +16,22 @@ var password=document.getElementById("password").value;
         a4: "PX_Company-4"
 
     }
-//     var attrib_value= document.getElementById("myCheck").checked;
+
     if(username!=""){
         if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com")&& password=="user" )
         {
             alert("valid user");
             b = username.substr(6, 5);
             var id = b;
+              var attrib_value= document.getElementById("myCheck").checked;
             if (username=="vinesh.gandhe@gmail.com") {
                     aptrinsic('identify', {
                             //User Fields
                             "id": id, // Required for logged in app users
                             "email": username,
                             "gender": "male",
-//                             "useractive" :attrib_value,
-//                             "checkattrib":attrib_value,
+                            "useractive" :attrib_value,
+                            "checkattrib":attrib_value,
                             
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
