@@ -74,7 +74,7 @@ pagebreak*/
   margin-top: 15%;
 }
 /* css for home page */
-
+/* 
 .dropdown {
   float: left;
   overflow: hidden;
@@ -119,7 +119,7 @@ pagebreak*/
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 /*CONTENT PAGE*/
 .radio-form{
     text-align: justify;
