@@ -5,6 +5,37 @@
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-K0EYK7ZWBNRU-2");
 
+//   iframe tag configure---start
+
+function initializeGainsightPX() 
+{
+    if (this.isGainsightPXInitialized) return;
+    
+    // Gainsight PX Tag
+    (function (n, t, a, e, x) {   
+        let i = "aptrinsic"; n[i] = n[i] || function () {
+            (n[i].q = n[i].q || []).push(arguments)
+        }, 
+        n[i].p = e, n[i].c = x;
+        
+        let r = t.createElement("script");
+        r.async = !0;
+        r.src = a + "?a=" + e;        
+        
+        let c = t.getElementsByTagName("script")[0];
+        c.parentNode.insertBefore(r, c);
+    })
+    (window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-K0EYK7ZWBNRU-2",{ "iframeModeEnabled": false });
+    // End Gainsight PX Tag    
+    
+    this.isGainsightPXInitialized = true;
+}
+
+
+//   iframe tag configure---end
+
+
+
 function validate(username)
 {
 var username=document.getElementById("username").value;
