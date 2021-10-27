@@ -148,7 +148,7 @@ function deleteAllCookies() {
 }
 
 //contextual search through labels
-aptrinsic('bot', 'search', {"labels": ['knowledge center']});
+aptrinsic("bot", "search", {"labels": ["articles"]});
 
 
 // const a=document.querySelector(".beginbtn");
